@@ -1,2 +1,2 @@
 # Finance, quants and tech
-Collection of finance, quants and mathematics topics.
+Collection of finance, quants and tech topics.
