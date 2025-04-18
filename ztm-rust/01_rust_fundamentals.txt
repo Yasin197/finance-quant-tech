@@ -1,0 +1,48 @@
+https://www.youtube.com/watch?v=EYCBm0xAWow
+ztm-rust quick notes:
+
+1) Rust Fundamentals:
+- characters '6' vs strings "hello" 
+- integer types are I or u e.g. i8 vs u8 where i incorporates negative values
+- isize and usize depends on where the program is compiled
+- variables - mutable vs immutable
+- let is a keyword used in the rust language which helps us create variables
+- variable statements always end with a ; as this denotes taking a single action moving onto the next line
+- println! --> the ! indicates that we are using a macro and not a function
+	- let life = 42;
+	- using :? is useful for debugging e.g. println!("{:?}", life)
+	- for end user display you can do println!("{life}");
+
+
+Example of  if..else code:
+let a = 99;
+if a > 99 {
+	println!("Big number");
+} else {
+	println!("Small number");
+}
+
+Repetition - looping:
+let mut a = 0;
+loop {
+	if a == 5 {
+	# once this condition evaluates to 5 we will break out of the loop
+		break;
+	}
+	println!("{:?}", a);
+	a = a + 1;
+}
+
+while loop:
+let mut a = 0;
+while a != 5 {
+	println!("{:?}", a);
+	a = a + 1;
+}
+
+
+-when using the rust-analyzer you can press F2 to rename a function and the whole codebase will be renamed
+-clippy is the rust linter tool
+- running clippy on a file e.g. cargo clippy --bin main.rs
+- error lens tool allows you to see better the errors on your code and the outputs of cargo clippy without running it, it runs in real time
+- if you dont want to see the info in the terminal when running rust code then you can use the -q flag e.g. cargo run -q --bin a1
