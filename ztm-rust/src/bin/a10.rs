@@ -12,4 +12,17 @@
 // * Use a match expression to determine which message
 //   to print
 
-fn main() {}
+// Rust is an expressions-based language, they coalesce to a single point, can be used for nesting logic
+
+fn print_message(gt_100: bool) {
+    match gt_100 {
+        true => println!("it's big"),
+        false => println!("it's small"),
+    }
+}
+
+fn main() {
+    let value = 100;
+    let is_gt_100 = value > 100;
+    print_message(is_gt_100);
+}
