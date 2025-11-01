@@ -10,4 +10,7 @@ dependencies = [
     "pandas>=2.2.3",
     "scipy>=1.15.1",
     "seaborn>=0.13.2",
+    "ipykernel",
+    "torch>=2.9.0",
+    "torchvision>=0.24.0",
 ]
